@@ -1,0 +1,21 @@
+prva - 28 gresaka od 420 -> 93.33%
+druga - 2 greske od 420 -> 99.52%
+treca - 5 gresaka od 210 -> 97.62%
+cetvrta - 5 greske od 210 -> 97.62% - cetiri greske su kod leonberga koji je jako posvetljen te lici na samojeda.
+
+---------------------------------------
+
+prvi pristup - 93.33%
+drugi pristup - pogresio i drugi i cetvrti model na toj istoj slici -> problematicna slika
+	      -> ukupno 2 + 5 + 4 = 11 gresaka od 420 slika -> 97.38%
+
+---------------------------------------
+
+resnet pristup - 15 gresaka od 420 -> 96.43%
+		 13 unknown-a -> prosledjujemo na oba specijalizovana klasifikatora 
+				 i kao rezultat uzimamo onaj sa vecim skorom
+				 tacnu klasifikaciju dobijamo za 10 od 13 slika -> 3 greske
+		 2 macke klasifikovao kao pse
+	       -> ukupno 3 + 2 + 9 + 7 = 21 gresaka 420 -> 95.00%
+Sveukupno, resnet je gresio na jako deformisanim/niskokvalitetnim slikama i slikama sa grimasama.
+Takodje je gresio samo kod macaka.

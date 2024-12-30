@@ -1,0 +1,22 @@
+prva - 9 gresaka od 420 -> 97.86%
+druga - 5 greske od 420 -> 98.81%
+treca - 10 gresaka od 210 -> 95.24%
+cetvrta - 7 greske od 210 -> 96.67%
+
+---------------------------------------
+
+prvi pristup - 97.86%
+drugi pristup - ukupno 5 + 10 + 7 = 22 gresaka od 420 slika -> 94.76%
+
+---------------------------------------
+
+resnet pristup - 15 gresaka od 420 -> 96.43%
+		 13 unknown-a -> prosledjujemo na oba specijalizovana klasifikatora 
+				 i kao rezultat uzimamo onaj sa vecim skorom
+				 tacnu klasifikaciju dobijamo za 11 od 13 slika -> 2 greske
+		 2 macke klasifikovao kao pse
+	       -> ukupno 2 + 2 + 9 + 7 = 20 gresaka 420 -> 95.24%
+Sveukupno, resnet je gresio na jako deformisanim/niskokvalitetnim slikama i slikama sa grimasama.
+Takodje je gresio samo kod macaka.
+
+
